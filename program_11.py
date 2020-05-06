@@ -58,7 +58,7 @@ def ReadMetrics( fileName ):
     returns the completed DataFrame."""
     
     #Reads in csv file from lab 10
-    DataDF = pd.read_csv(fileName, header=0, delimiter=' ', parse_dates=['Date'],index_col=['Date'])
+    DataDF = pd.read_csv(fileName, header=0, delimiter=',', parse_dates=['Date'],index_col=['Date'])
     
     return( DataDF )
 
